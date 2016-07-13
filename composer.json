@@ -1,0 +1,5 @@
+{
+    "require": {
+        "goaop/framework": "^1.1"
+    }
+}
