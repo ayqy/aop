@@ -1,0 +1,1 @@
+<?php return unserialize('a:1:{i:0;O:24:"Go\\Lang\\Annotation\\After":3:{s:5:"order";i:0;s:5:"scope";s:6:"aspect";s:5:"value";s:15:"$this->humanEat";}}');
