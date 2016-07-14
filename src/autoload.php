@@ -12,5 +12,7 @@
 if (file_exists(__DIR__ . '/../vendor/autoload.php')) {
     /** @var Composer\Autoload\ClassLoader $loader */
     $loader = include __DIR__ . '/../vendor/autoload.php';
-    $loader->add('Parser', __DIR__);
+
+//!!! Should configure this field
+    $loader->add('App', __DIR__);
 }

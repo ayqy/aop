@@ -9,7 +9,7 @@
  */
 
 use Doctrine\Common\Annotations\AnnotationRegistry;
-use Parser\Aspect\AwesomeAspectKernel;
+use App\Aspect\AwesomeAspectKernel;
 use Go\Aop\Features;
 
 include __DIR__ . '/autoload.php';
@@ -17,10 +17,10 @@ include __DIR__ . '/autoload.php';
 // Initialize demo aspect container
 AwesomeAspectKernel::getInstance()->init(array(
     'debug'    => true,
-    'appDir'   => __DIR__ . '/../RSSHelper',
+    'appDir'   => __DIR__ . '/../src',
     'cacheDir' => __DIR__ . '/cache',
 
     'features' => Features::INTERCEPT_FUNCTIONS,
 ));
 
-// AnnotationRegistry::registerFile(__DIR__ . '/RSSHelper/Annotation/Cacheable.php');
+// AnnotationRegistry::registerFile(__DIR__ . '/App/Annotation/Cacheable.php');

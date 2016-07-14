@@ -8,7 +8,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Parser\Parser;
+namespace App\App;
 
 /**
  * Human class example
