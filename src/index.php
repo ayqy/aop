@@ -7,21 +7,23 @@
 <body>
 <pre>
 <?php
-use App\App\HumanDemo;
+use App\App\OOUser;
+use App\App\AOPUser;
 use Go\Instrument\Transformer\MagicConstantTransformer;
 
+// autoload
 $isAOPDisabled = false;
 include __DIR__ . ($isAOPDisabled ? '/autoload.php' : '/autoload_aspect.php');
 
-$example = null;
+// OO style
+$user = new OOUser();
+$user->add(array('password' => '*'));
 
-$example = new HumanDemo();
-echo "Want to eat something, let's have a breakfast!", PHP_EOL;
-$example->eat();
-echo "I should work to earn some money", PHP_EOL;
-$example->work();
-echo "It was a nice day, go to bed", PHP_EOL;
-$example->sleep();
+echo "<hr>";
+
+// AOP style
+$user = new AOPUser();
+$user->add(array('password' => '****'));
 ?>
 </pre>
 
