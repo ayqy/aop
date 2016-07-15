@@ -23,4 +23,5 @@ AwesomeAspectKernel::getInstance()->init(array(
     'features' => Features::INTERCEPT_FUNCTIONS,
 ));
 
-// AnnotationRegistry::registerFile(__DIR__ . '/App/Annotation/Cacheable.php');
+// register Annotation
+AnnotationRegistry::registerFile(__DIR__ . '/App/Annotation/Loggable.php');

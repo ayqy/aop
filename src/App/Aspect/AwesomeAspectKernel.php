@@ -29,6 +29,6 @@ class AwesomeAspectKernel extends AspectKernel
      */
     protected function configureAop(AspectContainer $container)
     {
-        $container->registerAspect(new HealthyLiveAspect());
+        $container->registerAspect(new UserAspect());
     }
 }
