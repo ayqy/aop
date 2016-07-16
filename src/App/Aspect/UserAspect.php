@@ -90,7 +90,7 @@ class UserAspect implements Aspect {
         $user->log('user create error, handle error here');
         // handleError();
         
-        //!!! avoid to report error
+        //!!! avoid reporting error
         set_exception_handler(function($e) {
             echo "!!!Global Exception Handler: " . $e->getMessage();
         });
