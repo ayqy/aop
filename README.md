@@ -312,9 +312,9 @@ P.S.GO! AOP相当强大，也提供了切入系统方法及工具函数的方式
 
 ##四.Demo
 
-在线Demo：<>
+在线Demo：<http://www.ayqy.net/temp/aop/src/>
 
-源码地址：<>
+源码地址：<https://github.com/ayqy/aop>
 
 ##五.总结
 
